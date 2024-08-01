@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* box-sizing è fondamntale per evitare che padding e bordi aumentino la dimensione dei nostri elementi OLTRE il 50% che vorremmo dargli */
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .box {
+            width: 50%;
+            height: 100px;
+            display: inline-block;
+            margin-right: -4px;
+            /* -4px serve come "trucchetto" per rimuovere lo spazio tra due elementi affiancati per via dell'inline-block */
+
+            vertical-align: bottom;
+            /* vertical-align va usato tutte le volte che allineiamo due elementi con inline-block (si applica solo per elementi con inline-block) */
+        }
+
+        .aqua {
+            background-color: aqua;
+        }
+
+        .coral {
+            background-color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box aqua">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, iste voluptate. Atque sunt cum
+        obcaecati, in deleniti saepe quam officiis voluptates esse necessitatibus eum iusto, quae eius, optio facilis
+        distinctio.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi saepe, placeat hic quaerat quo molestiae modi
+        eos quidem fuga recusandae incidunt quibusdam fugit distinctio impedit ullam deleniti, officia commodi totam?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit officia optio ipsa perferendis nemo fuga odit
+        fugit magnam veritatis fugiat, beatae ipsum laborum quos illo aperiam maxime modi libero repellendus?
+        Libero rerum reprehenderit excepturi, incidunt, quos earum unde in asperiores ad ut ducimus iste illo.
+        Voluptates, rem illo. Repellat eius, vero tempore ullam nobis alias ad mollitia facere dolor sed!
+        Ipsum et, suscipit quos magnam sunt vero. Sunt eius dolorum et maxime aperiam commodi provident pariatur
+        laborum, voluptatibus fugiat vitae hic assumenda eveniet quod nemo quis voluptate alias optio. Voluptatem!
+        Esse saepe quaerat, neque minima doloribus nihil hic nulla inventore earum vero. Explicabo facilis reiciendis
+        consectetur! Minima explicabo pariatur itaque voluptatibus quis nesciunt esse, ullam tempora magni? Dignissimos,
+        ab consectetur?
+        Aspernatur voluptates non nobis inventore ullam adipisci a ipsa tempora quos id fugit ipsam ratione omnis
+        voluptas rerum maiores modi, eum est assumenda possimus aperiam. Fuga deleniti temporibus eaque in!
+    </div>
+    <div class="box coral">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ut labore dignissimos ex at
+        ab. Saepe doloremque ipsum eligendi aut officia porro voluptatem numquam corporis sapiente animi, voluptatibus
+        sint iure.</div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* box-sizing è fondamntale per evitare che padding e bordi aumentino la dimensione dei nostri elementi OLTRE il 50% che vorremmo dargli */
+        }
+
+        body {
+            margin: 0;
+            font-family: cursive;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+
+        }
+
+        .circle {
+            background-color: palegreen;
+            border-radius: 50%;
+            /* il border radius al 50% su un elemento quadrato (width & height uguali) ci dà un cerchio perfetto */
+        }
+
+        .pill {
+            background-color: peachpuff;
+            width: 400px;
+            border-radius: 100px;
+            /* anche esagerare con un valore in pixel non crea nessun problema, saremo certi di aver raggiunto l'effetto */
+        }
+
+        .uneven {
+            background-color: plum;
+            width: 300px;
+            height: 300px;
+
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .leaf {
+            background-color: aquamarine;
+            border-radius: 100% 0% 53% 47% / 59% 0% 100% 41%;
+            /* fancy border radius generator:
+            https://9elements.github.io/fancy-border-radius
+            */
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>titolo principale</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <input type="text" value="qualcosa">
+    <textarea name="" id="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, maiores!</textarea>
+    <div class="box circle"></div>
+    <div class="box pill"></div>
+    <div class="box uneven"></div>
+    <div class="box leaf"></div>
+
+    <button>click me</button>
+</body>
+
+</html>
